@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Wed Jun 21 2023 10:03:54 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Jun 20 2023 22:56:46 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64918bbb2bf7f74226f54db2" data-wf-site="64918bbb2bf7f74226f54daa">
 <head>
   <meta charset="utf-8">
@@ -102,16 +102,20 @@ z-index: 9999;
       <p class="paragraph">At Catatumbo Media, we&#x27;re committed to helping you achieve success in generating new leads.</p>
     </div>
     <div id="w-node-_2ba421b1-c7b8-15c7-fecd-d201ca6d9a1a-26f54db2" class="w-layout-cell cell-2">
-      <div id="image-wrapper-1" class="image-wrapper"><video preload="auto" playsinline muted loop autoplay src="images/2.mp4" class="image"></video><img src="images/Frame-2-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-2-1-p-500.png 500w, images/Frame-2-1.png 661w" id="hover-image-1" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-1" alt="" class="read"></div>
+      <div id="image-wrapper-1" class="image-wrapper">
+        <video preload="auto" playsinline muted loop autoplay src="images/1.mp4" class="image"></video><img src="images/Frame-2-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-2-1.png 500w, images/Frame-2-1.png 661w" id="hover-image-1" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-1" alt="" class="read"></div>
     </div>
     <div id="w-node-ca3fa9b2-a89c-2228-4041-8852002e05ad-26f54db2" class="w-layout-cell cell-2">
-      <div id="image-wrapper-2" class="image-wrapper"><video preload="auto" playsinline muted loop autoplay src="images/3.mp4" class="image"></video><img src="images/Frame-3-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-3-1-p-500.png 500w, images/Frame-3-1.png 661w" id="hover-image-2" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-2" alt="" class="read"></div>
+      <div id="image-wrapper-2" class="image-wrapper">
+        <video preload="auto" playsinline muted loop autoplay src="images/2.mp4" class="image"></video><img src="images/Frame-3-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-3-1.png 500w, images/Frame-3-1.png 661w" id="hover-image-2" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-2" alt="" class="read"></div>
     </div>
     <div id="w-node-b92a00e1-4c68-9b88-42e0-bbb6907ccead-26f54db2" class="w-layout-cell cell-2">
-      <div id="image-wrapper-3" class="image-wrapper"><video preload="auto" playsinline muted loop autoplay src="images/1.mp4" class="image"></video><img src="images/Frame-4-2.png" loading="lazy" sizes="100vw" srcset="images/Frame-4-2-p-500.png 500w, images/Frame-4-2.png 661w" id="hover-image-3" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-3" alt="" class="read"></div>
+      <div id="image-wrapper-3" class="image-wrapper">
+        <video preload="auto" playsinline muted loop autoplay src="images/3.mp4" class="image"></video><img src="images/Frame-4-2.png" loading="lazy" sizes="100vw" srcset="images/Frame-4-2.png 500w, images/Frame-4-2.png 661w" id="hover-image-3" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-3" alt="" class="read"></div>
     </div>
     <div id="w-node-b66fb1ef-4261-1ba1-b193-90765add49e1-26f54db2" class="w-layout-cell cell-2">
-      <div id="image-wrapper-4" class="image-wrapper"><video preload="auto" playsinline muted loop autoplay src="images/4.mp4" class="image"></video><img src="images/Frame-5-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-5-1-p-500.png 500w, images/Frame-5-1.png 661w" id="hover-image-4" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-4" alt="" class="read"></div>
+      <div id="image-wrapper-4" class="image-wrapper">
+        <video preload="auto" playsinline muted loop autoplay src="images/4.mp4" class="image"></video><img src="images/Frame-5-1.png" loading="lazy" sizes="100vw" srcset="images/Frame-5-1.png 500w, images/Frame-5-1.png 661w" id="hover-image-4" alt="" class="hover-image"><img src="images/64725a5ac767b3d901f69ad5_read_belo.png" loading="lazy" id="read-4" alt="" class="read"></div>
     </div>
   </div>
   <div id="modal-container-1" class="modal-container hide">
@@ -162,70 +166,67 @@ z-index: 9999;
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64918bbb2bf7f74226f54daa" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <script>
+$(window).on('load resize', function(){
+    $('.image').each(function(i, obj) {
+      $(this).parent().height($(this).height())
+    });
+});
 $('#image-wrapper-1').hover(function () {
-		if (document.body.clientWidth > 991) {
-        $('#hover-image-1').css({display: 'block'});
-        slideX = $(this).offset().left
-        slideY = $(this).offset().top
-        $(document).mousemove(function(e){
-            x = e.clientX - 74 - slideX;
-            y = e.clientY - 74 - slideY;
-            $('#read-1').css({left: x + 'px'});
-            $('#read-1').css({top: y + 'px'});
-            $('#read-1').css({display: 'block'});
-        });
-    }
+  	$('#hover-image-1').css({display: 'block'});
+    slideX = $(this).offset().left
+    slideY = $(this).offset().top
+    $(document).mousemove(function(e){
+        x = e.clientX - 74 - slideX;
+    		y = e.clientY - 74 - slideY;
+        $('#read-1').css({left: x + 'px'});
+        $('#read-1').css({top: y + 'px'});
+        $('#read-1').css({display: 'block'});
+    });
 });
 $('#image-wrapper-1').mouseleave(function () {
   	$('#hover-image-1').css({display: 'none'});
 });
 $('#image-wrapper-2').hover(function () {
-		if (document.body.clientWidth > 991) {
-        $('#hover-image-2').css({display: 'block'});
-        slideX = $(this).offset().left
-        slideY = $(this).offset().top
-        $(document).mousemove(function(e){
-            x = e.clientX - 74 - slideX;
-            y = e.clientY - 74 - slideY;
-            $('#read-2').css({left: x + 'px'});
-            $('#read-2').css({top: y + 'px'});
-            $('#read-2').css({display: 'block'});
-        });
-    }
+  	$('#hover-image-2').css({display: 'block'});
+    slideX = $(this).offset().left
+    slideY = $(this).offset().top
+    $(document).mousemove(function(e){
+        x = e.clientX - 74 - slideX;
+    		y = e.clientY - 74 - slideY;
+        $('#read-2').css({left: x + 'px'});
+        $('#read-2').css({top: y + 'px'});
+        $('#read-2').css({display: 'block'});
+    });
 });
 $('#image-wrapper-2').mouseleave(function () {
   	$('#hover-image-2').css({display: 'none'});
 });
 $('#image-wrapper-3').hover(function () {
-		if (document.body.clientWidth > 991) {
-        $('#hover-image-3').css({display: 'block'});
-        slideX = $(this).offset().left
-        slideY = $(this).offset().top
-        $(document).mousemove(function(e){
-            x = e.clientX - 74 - slideX;
-            y = e.clientY - 74 - slideY;
-            $('#read-3').css({left: x + 'px'});
-            $('#read-3').css({top: y + 'px'});
-            $('#read-3').css({display: 'block'});
-        });
-    }
+  	$('#hover-image-3').css({display: 'block'});
+    slideX = $(this).offset().left
+    slideY = $(this).offset().top
+    $(document).mousemove(function(e){
+        x = e.clientX - 74 - slideX;
+    		y = e.clientY - 74 - slideY;
+        $('#read-3').css({left: x + 'px'});
+        $('#read-3').css({top: y + 'px'});
+        $('#read-3').css({display: 'block'});
+    });
 });
 $('#image-wrapper-3').mouseleave(function () {
   	$('#hover-image-3').css({display: 'none'});
 });
 $('#image-wrapper-4').hover(function () {
-		if (document.body.clientWidth > 991) {
-        $('#hover-image-4').css({display: 'block'});
-        slideX = $(this).offset().left
-        slideY = $(this).offset().top
-        $(document).mousemove(function(e){
-            x = e.clientX - 74 - slideX;
-            y = e.clientY - 74 - slideY;
-            $('#read-4').css({left: x + 'px'});
-            $('#read-4').css({top: y + 'px'});
-            $('#read-4').css({display: 'block'});
-        });
-    }
+  	$('#hover-image-4').css({display: 'block'});
+    slideX = $(this).offset().left
+    slideY = $(this).offset().top
+    $(document).mousemove(function(e){
+        x = e.clientX - 74 - slideX;
+    		y = e.clientY - 74 - slideY;
+        $('#read-4').css({left: x + 'px'});
+        $('#read-4').css({top: y + 'px'});
+        $('#read-4').css({display: 'block'});
+    });
 });
 $('#image-wrapper-4').mouseleave(function () {
   	$('#hover-image-4').css({display: 'none'});
